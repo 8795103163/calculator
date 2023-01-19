@@ -87,7 +87,8 @@
         <tr>
             <td><button onclick="cal('00')">00</button></td>
             <td><button onclick="cal('.')">.</button></td>
-            <td colspan="2"><button onclick="equal()" style="width:70px">=</button></td>
+            <td><button onclick="per()">%</button></td>
+            <td><button onclick="equal()">=</button></td>
         </tr>
     </table>
     <script>
@@ -108,6 +109,10 @@
             
             b=document.getElementById("res").innerHTML=b.substr(0,(b.length-1));
 
+        }
+        function per(){
+            
+            b=document.getElementById("res").innerHTML=b/100;
         }
     </script>
 </body>
